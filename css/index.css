@@ -1,2 +1,42 @@
-h1 {color: aliceblue;
+body{
+    margin: 0;
+}
+.wrapper{
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 100px;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+.sideber, .main{
+    padding-top: 50px;
+}
+.main{
+    padding-left: 380px;
+    margin: 10px;
+}
+.sideber {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 380px;
+    height: 100vh;
+    background-color: #80ffff;
+    text-align: center;
+}
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #444;
+    border-top: 1px solid #d2d6de;
+    z-index: 1;
+    background-color: #FFF;
+    text-align: center;
+}
+footer p{
+    padding: 15px;
 }
