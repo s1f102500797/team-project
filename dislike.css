@@ -2,13 +2,13 @@ div.rank {border-bottom: solid 2px #555151;
 }
 
 div.rank3 {
-    border-bottom: #ad7d1d;
+    border-bottom: solid 2px #ad7d1d;
 }
 
 div.rank2 {
-    border-bottom: #bdbbb9;
+    border-bottom: solid 2px #bdbbb9;
 }
 
 div.rank1 {
-    border-bottom: #ffb92e;
+    border-bottom: solid 2px #ffb92e;
 }
