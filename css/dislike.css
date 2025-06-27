@@ -12,3 +12,51 @@ div.rank2 {
 div.rank1 {
     border-bottom: solid 2px #ffb92e;
 }
+
+#radar-chart-container {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+}
+
+#radar-chart {
+    background-color: #ffffff;
+    border: 1px solid #eee;
+}
+
+/* 軸のスタイル */
+.radar-axis {
+    stroke: #aaa;
+    stroke-width: 1;
+}
+
+/* グリッドの五角形のスタイル (内側) */
+.radar-grid-polygon {
+    fill: none;
+    stroke: #ddd;
+    stroke-width: 0.5;
+    stroke-dasharray: 2 2; /* 破線 */
+}
+
+/* 外枠の五角形のスタイル */
+.radar-outer-frame {
+    fill: none;
+    stroke: #888; /* 少し濃い色に */
+    stroke-width: 1.5; /* 太めに */
+}
+
+/* データ表示用の多角形のスタイル */
+.radar-data-polygon {
+    fill: rgba(75, 192, 192, 0.6); /* 半透明の塗りつぶし */
+    stroke: rgb(75, 192, 192);
+    stroke-width: 2;
+    transition: all 0.3s ease-in-out;
+}
+
+/* 項目名のスタイル */
+.radar-label {
+    font-size: 14px;
+    text-anchor: middle;
+    fill: #333;
+}
