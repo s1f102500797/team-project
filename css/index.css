@@ -5,13 +5,17 @@ body{
     position: relative;
     min-height: 100vh;
 }
+.main{
+    border-top: 3px solid #80ffff;
+}
 ul.menu{
-    background-color: #80ffff;
+    background-color: #fff;
 }
 ul.menu > li{
     background-color: #fff;
-    border-radius: 5px;
     margin-bottom: 10px;
+    border: 3px solid #80ffff;
+    border-radius: 6px;
 }
 footer {
     position: absolute;
