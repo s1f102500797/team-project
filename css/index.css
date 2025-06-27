@@ -10,21 +10,22 @@ body{
     display: flex;
     justify-content: space-around;
 }
+div.drawer{
+    position: absolute;
+}
+div.drawer-content{
+    margin: 20px 0 0 20px;
+}
+ul.menu{
+    background-color: #80ffff;
+}
+ul.menu > li{
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
 .sideber, .main{
     padding-top: 50px;
-}
-.main{
-    padding-left: 380px;
-    margin: 10px;
-}
-.sideber {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 380px;
-    height: 100vh;
-    background-color: #80ffff;
-    text-align: center;
 }
 footer {
     position: absolute;
