@@ -5,29 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <title>チーム開発</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
 <body>
     <div class="wrapper">
         <div class="container">
-            <div class="sideber">
-                <h2>メニュー</h2>
-                <p><a href="sihan.html">市販のアイス</a></p>
-                <p>31アイスクリーム</p>
-                <p><a href="dislike.html">嫌いなアイス</a></p>
+            <div class="navbar bg-base-100 shadow-sm">
+                <div class="flex-1">
+                    <div class="drawer">
+                        <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+                        <div class="drawer-content">
+                            <label for="my-drawer" class="btn btn-primary drawer-button text-xl h-7">メニュー</label>
+                        </div>
+                        <div class="drawer-side">
+                            <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+                            <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4 text-base">
+                            <li><a href="sihan.html">市販のアイス</a></li>
+                            <li><p>自動販売機</p></li>
+                            <li><a href="dislike.html">嫌いなアイス</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="main">
-                <h1>アイス</h1>
-                <p>
-                    アイスクリーム（英: ice cream）は、牛乳などを原料にして、<br>
-                    冷やしながら空気を含むように攪拌してクリーム状とし、<br>
-                    これを凍らせた菓子である。<br>
-                    そのうち、柔らかいものは「ソフトクリーム」と呼ばれる。<br>
-                    また、アイスクリームはアイスとも言う。<br>
-                    後述する通り、国によっては「アイスクリーム」製品の規格を規定する場合がある。<br>
-                    例えば日本では乳固形分及び乳脂肪分が最も高いアイスクリームと、<br>
-                    アイスミルク、ラクトアイスの3種類を合わせて広義に「アイスクリーム類」と称す。<br>
-                    乳成分をほとんど含まず、クリーム状でない氷菓（ひょうか）もアイスクリームに括られることも多い
-                </p>
+                <div class="bg-base-200 min-h-screen">
+                    <div class="pt-7 hero-content">
+                        <div class="w-4/5">
+                        <h1 class="text-5xl font-bold">アイス</h1>
+                        <p class="py-6">
+                            アイスクリーム（英: ice cream）は、牛乳などを原料にして、<br>
+                            冷やしながら空気を含むように攪拌してクリーム状とし、<br>
+                            これを凍らせた菓子である。<br>
+                            そのうち、柔らかいものは「ソフトクリーム」と呼ばれる。<br>
+                            また、アイスクリームはアイスとも言う。<br>
+                            後述する通り、国によっては「アイスクリーム」製品の規格を規定する場合がある。<br>
+                            例えば日本では乳固形分及び乳脂肪分が最も高いアイスクリームと、<br>
+                            アイスミルク、ラクトアイスの3種類を合わせて広義に「アイスクリーム類」と称す。<br>
+                            乳成分をほとんど含まず、クリーム状でない氷菓（ひょうか）もアイスクリームに括られることも多い
+                        </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <footer class="footer">
