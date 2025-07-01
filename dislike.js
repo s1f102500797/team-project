@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     const svg = document.getElementById('radar-chart');
-    const centerX = 200; // SVGの中心X座標
-    const centerY = 200; // SVGの中心Y座標
-    const maxRadius = 150; // レーダーチャートの最大半径（五角形の頂点までの距離）
+    const centerX = 150; // SVGの中心X座標
+    const centerY = 150; // SVGの中心Y座標
+    const maxRadius = 80; // レーダーチャートの最大半径（五角形の頂点までの距離）
 
-    const labels = ["攻撃力", "防御力", "素早さ", "賢さ", "運"];
-    const data = [70, 85, 60, 90, 40]; // 各項目の値 (0-100)
+    const labels = ["味の不味さ", "価格", "食べにくさ", "見た目の不味さ", "カロリー"];
+    const data = [80, 85, 60, 90, 40]; // 各項目の値 (0-100)
 
     // 各軸の角度を計算 (90度から開始し時計回り)
     // 五角形の各頂点の角度と同じになります
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
     svg.appendChild(createSVGElement('polygon', { points: dataPoints, class: 'radar-data-polygon' }));
 
     // --- 項目名 ---
-    const labelOffset = 20; // ラベルと外枠の距離
+    const labelOffset = 30; // ラベルと外枠の距離
     labels.forEach((label, i) => {
         const angle = angles[i];
         const x = centerX + Math.cos(angle) * (maxRadius + labelOffset);

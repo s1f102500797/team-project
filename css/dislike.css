@@ -16,8 +16,7 @@ div.rank1 {
 #radar-chart-container {
     border: 1px solid #ccc;
     background-color: #fff;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-    padding: 20px;
+    padding: 10px;
 }
 
 #radar-chart {
