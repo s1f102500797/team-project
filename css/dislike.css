@@ -24,6 +24,17 @@ div.rank1 {
     border: 1px solid #eee;
 }
 
+#radar-chart-container3 {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 10px;
+}
+
+#radar-chart3 {
+    background-color: #ffffff;
+    border: 1px solid #eee;
+}
+
 /* 軸のスタイル */
 .radar-axis {
     stroke: #aaa;
