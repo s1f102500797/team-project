@@ -1,3 +1,15 @@
+body {font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {text-align: center;
+    background-image: url(../20240322083146.jpg);
+    background-position: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: #48fcff;
+    text-shadow: 2px 2px 2px #ffffff;
+}
+
 div.rank {border-bottom: solid 2px #555151; 
 }
 
