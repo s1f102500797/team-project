@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const maxRadius = 150; 
 
     const labels = ["味の不味さ", "価格", "食べにくさ", "見た目の不味さ", "カロリー"];
-    const data = [75, 20, 20, 70, 20]; 
+    const data = [75, 10, 20, 70, 20]; 
     
     const angles = labels.map((_, i) => Math.PI / 2 + (Math.PI * 2 / 5) * i);
 
