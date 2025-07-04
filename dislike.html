@@ -4,74 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>買ってはいけないアイス</title>
+    <style>
+        .flex-container {
+            display: flex; 
+            justify-content: center; 
+            align-items: flex-start; 
+            gap: 20px; 
+        }
+    </style>
     <link rel="stylesheet" type="text/css" href="./css/dislike.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <h1>買ってはいけないアイスランキング</h1>
-    <p>最近の夏は暑すぎて、アイスを見かけるたびに買いたくなってしまいますよね。しかし、この世には買ってはいけないアイスというものが存在します。</p>
-    <p>それを今回ランキング形式でお教えしましょう。</p>
-    <p>評価基準は以下のとおりです。</p>
-    <ul>
-        <li>味の不味さ</li>
-        <li>見た目の不味さ</li>
-        <li>カロリー</li>
-        <li>価格</li>
-        <li>食べにくさ</li>
-    </ul>
+    <div class="wrapper">
+        <div class="navbar bg-base-100 shadow-sm">
+            <div class="flex-1">
+                <div class="drawer">
+                    <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+                    <div class="drawer-content">
+                        <label for="my-drawer" class="btn btn-primary drawer-button text-xl h-7">メニュー</label>
+                    </div>
+                    <div class="drawer-side">
+                        <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+                        <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4 text-base">
+                        <li><a href="sihan.html">市販のアイス</a></li>
+                        <li><a href="box.html">自動販売機</a></li>
+                        <li><a href="dislike.html">嫌いなアイス</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <h1>買ってはいけないアイスランキング</h1>
+            <p>最近の夏は暑すぎて、アイスを見かけるたびに買いたくなってしまいますよね。しかし、この世には買ってはいけないアイスというものが存在します。</p>
+            <p>それを今回ランキング形式でお教えしましょう。</p>
+            <p>評価基準は以下のとおりです。</p>
+            <ul>
+                <li>味の不味さ</li>
+                <li>見た目の不味さ</li>
+                <li>カロリー</li>
+                <li>価格</li>
+                <li>食べにくさ</li>
+            </ul>
 
-    <div class="rank">
-    <h2>5位：アイス</h2>
-    </div>
-    <p>＜商品情報＞</p>
-    <ul>
-        <li>商品名：<strong>レトロかわいい プリンアイス</strong></li>
-        <li>価格：</li>
-        <li>販売場所：</li>
-    </ul>
-    <img src="c:\Users\iniad\Downloads\IMG_1607.jpg" alt="プリンアイス" width="400" height="540">
-    <div id="radar-chart-container">
-      <svg id="radar-chart" width="400" height="400" viewBox="0 0 400 400"></svg>
-    </div>
-    <script src="dislike.js"></script>
+            <div class="rank">
+            <h2>5位：レトロかわいい　プリンアイス</h2>
+            </div>
+            <p>＜商品情報＞</p>
+            <ul>
+                <li>商品名：<strong>レトロかわいい プリンアイス</strong></li>
+                <li>価格：</li>
+                <li>販売場所：</li>
+            </ul>
+            <div class="flex-container">
+                <img src="IMG_1607.jpg" alt="プリンアイス" width="400" height="540">
+                <div id="radar-chart-container">
+                    <svg id="radar-chart" width="400" height="400" viewBox="0 0 400 400"></svg>
+                </div>
+            </div>
+            <script src="dislike.js"></script>
+            
 
-    <div class="rank3">
-    <h2>3位：アイス</h2>
-    </div>
-    <img src="" alt="">
-    <p>＜商品情報＞</p>
-    <ul>
-        <li>商品名：</li>
-        <li>価格：</li>
-        <li>販売場所：</li>
-    </ul>
-    <div id="radar-chart-container3">
-      <svg id="radar-chart3" width="400" height="400" viewBox="0 0 400 400"></svg>
-    </div>
-    <script src="dislike3.js"></script>
-    
+            <div class="rank3">
+            <h2>3位：アイス</h2>
+            </div>
+            <img src="" alt="">
+            <p>＜商品情報＞</p>
+            <ul>
+                <li>商品名：</li>
+                <li>価格：</li>
+                <li>販売場所：</li>
+            </ul>
+            <div id="radar-chart-container3">
+            <svg id="radar-chart3" width="400" height="400" viewBox="0 0 400 400"></svg>
+            </div>
+            <script src="dislike3.js"></script>
+            
 
-    <div class="rank2">
-    <h2>2位：アイス</h2>
-    </div>
-    <img src="" alt="">
-    <p>＜商品情報＞</p>
-    <ul>
-        <li>商品名：</li>
-        <li>価格：</li>
-        <li>販売場所：</li>
-    </ul>
-    
+            <div class="rank2">
+            <h2>2位：アイス</h2>
+            </div>
+            <img src="" alt="">
+            <p>＜商品情報＞</p>
+            <ul>
+                <li>商品名：</li>
+                <li>価格：</li>
+                <li>販売場所：</li>
+            </ul>
+            
 
-    <div class="rank1">
-    <h2>1位：アイス</h2>
+            <div class="rank1">
+            <h2>1位：アイス</h2>
+            </div>
+            <img src="" alt="">
+            <p>＜商品情報＞</p>
+            <ul>
+                <li>商品名：</li>
+                <li>価格：</li>
+                <li>販売場所：</li>
+            </ul>
+        </div>
+        <footer class="footer">
+            <p><strong>Copyright © 2025 R.S.H.</strong>All rights reserved.</p>
+        </footer>
     </div>
-    <img src="" alt="">
-    <p>＜商品情報＞</p>
-    <ul>
-        <li>商品名：</li>
-        <li>価格：</li>
-        <li>販売場所：</li>
-    </ul>
-    
 </body>
 </html>
