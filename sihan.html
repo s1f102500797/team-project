@@ -5,18 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="./css/sihan.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <h1>市販のアイス</h1>
-    1111111111111
-    <ol>
-        <li>ガリガリ君</li>
-        結局これに戻ってくるアイス界No.1
-        <li>アイスの実</li>
-        食べやすい！汚れない！
-        <li>ジャンボ</li>
-        <li>ハーゲンダッツ</li>
-        <li>ピノ</li>
-    </ol>
+    <div class="navbar bg-base-100 shadow-sm">
+        <div class="flex-1">
+            <div class="drawer">
+                <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+                <div class="drawer-content">
+                    <label for="my-drawer" class="btn btn-primary drawer-button text-xl h-7">メニュー</label>
+                </div>
+                <div class="drawer-side">
+                    <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+                    <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4 text-base">
+                    <li><a href="sihan.html">市販のアイス</a></li>
+                    <li><a href="box.html">自動販売機</a></li>
+                    <li><a href="dislike.html">嫌いなアイス</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <h1>市販のアイス</h1>
+        1111111111111
+        <ol>
+            <li>ガリガリ君</li>
+            結局これに戻ってくるアイス界No.1
+            <li>アイスの実</li>
+            食べやすい！汚れない！
+            <li>ジャンボ</li>
+            <li>ハーゲンダッツ</li>
+            <li>ピノ</li>
+        </ol>
+    </div>
+    <footer class="footer">
+        <p><strong>Copyright © 2025 R.S.H.</strong>All rights reserved.</p>
+    </footer>
 </body>
 </html>
