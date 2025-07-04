@@ -11,38 +11,43 @@
       type="text/css"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery.inview.min.js"></script>
+    <script src="js/main.js"></script>
 </head>
 <body>
-    <div class="navbar bg-base-100 shadow-sm">
-        <div class="flex-1">
-            <div class="drawer">
-                <input id="my-drawer" type="checkbox" class="drawer-toggle" />
-                <div class="drawer-content">
-                    <label for="my-drawer" class="btn btn-primary drawer-button text-xl h-7">メニュー</label>
-                </div>
-                <div class="drawer-side">
-                    <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
-                    <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4 text-base">
-                    <li><a href="sihan.html">市販のアイス</a></li>
-                    <li><a href="box.html">自動販売機</a></li>
-                    <li><a href="dislike.html">嫌いなアイス</a></li>
-                    </ul>
+    <div class="wrapper">
+        <div class="navbar bg-base-100 shadow-sm">
+            <div class="flex-1">
+                <div class="drawer">
+                    <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+                    <div class="drawer-content">
+                        <label for="my-drawer" class="btn btn-primary drawer-button text-xl h-7">メニュー</label>
+                    </div>
+                    <div class="drawer-side">
+                        <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+                        <ul class="menu bg-base-200 text-base-content min-h-full w-80 p-4 text-base">
+                        <li><a href="sihan.html">市販のアイス</a></li>
+                        <li><a href="box.html">自動販売機</a></li>
+                        <li><a href="dislike.html">嫌いなアイス</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="main">
+            <h1><span class="blue">自</span>動販売<span class="blue">機</span></h1>
+            <ol>
+                <li><strong>サイダー</strong><img src="./img/img_0629_720.jpg" style="width: 200px;">さっぱりとした炭酸風味がアイスクリームに絶妙にマッチ。口に入れるとシュワッと弾ける爽快感があり、甘さ控えめなので暑い日にぴったりです。後味にほんのり柑橘系の香りが残り、何度でもリピートしたくなる軽やかさ。</li>
+                <li><strong>クッキー＆クリーム</strong><img src="./img/img_0620_720.jpg" style="width: 200px;">バニラベースのクリーミーな甘さに、ザクザクとしたココアクッキーがたっぷり。クッキーのほろ苦さがアクセントになり、ただのバニラアイスにはない食感の楽しさがあります。大人から子どもまで愛される王道フレーバー。</li>
+                <li><strong>宇治抹茶</strong><img src="./img/img_0622_720.jpg" style="width: 200px;">濃厚で香り高い抹茶の味わいがしっかり感じられる一品。苦みと甘みのバランスが秀逸で、後味にもちょっとした渋みが残る本格派。抹茶好きにはたまらない、和の風味を存分に楽しめるアイスです。</li>
+                <li><strong>ワッフルコーンショコラ</strong><img src="./img/img_0615_720.jpg" style="width: 200px;">パリッとしたワッフルコーンと、ビターなチョコレートコーティングが相性抜群。中のチョコアイスは濃厚ながらも後味は重たすぎず、コーンの香ばしさと一緒に最後まで飽きずに食べられます。食感と味わいのコントラストが楽しいフレーバー。</li>
+                <li><strong>チョコミント</strong><img src="./img/img_0625_720.jpg" style="width: 200px;">爽やかなミントの清涼感と、ほろ苦いチョコチップの組み合わせが爽快。ミントの冷涼感が強すぎず、ほどよい刺激で口内がリフレッシュ。甘さと清涼感のバランスが絶妙で、夏場に特におすすめしたい一品です。</li>
+            </ol>
+        </div>
+        <footer class="footer">
+            <p><strong>Copyright © 2025 R.S.H.</strong>All rights reserved.</p>
+        </footer>
     </div>
-    <div class="main">
-        <h1><span class="blue">自</span>動販売<span class="blue">機</span></h1>
-        <ol>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ol>
-    </div>
-    <footer class="footer">
-        <p><strong>Copyright © 2025 R.S.H.</strong>All rights reserved.</p>
-    </footer>
 </body>
 </html>

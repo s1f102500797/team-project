@@ -1,5 +1,9 @@
 span.blue{color: blue;}
 
+.wrapper{
+    position: relative;
+    min-height: 100vh;
+}
 h1{
     display: block;
     font-size: 2em;
@@ -37,6 +41,23 @@ ul.menu > li{
 .main{
     border-top: 3px solid #80ffff;
     padding-left: 20px;
+}
+@keyframes slide {
+  0% {
+    left: 0;
+    width: calc(4 / 5 * 100%);
+  }
+  100% {
+    left: calc(var(--spacing) * 80);
+    width: calc(100% - (var(--spacing) * 80));
+  }
+}
+.main.active{
+    position: relative;
+    animation-name: slide;
+    animation-duration: 0.5s;
+    width: calc(100% - (var(--spacing) * 80));
+    left: calc(var(--spacing) * 80);
 }
 footer {
     position: absolute;
