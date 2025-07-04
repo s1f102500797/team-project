@@ -27,8 +27,24 @@ li {
     display: list-item;
     text-align: -webkit-match-parent;
     unicode-bidi: isolate;
+    padding-bottom: 10px;
 }
-
+li:last-child{
+    padding-bottom: 80px;
+}
+.flex{
+    display: flex;
+}
+strong{
+    font-size: 1.5em;
+}
+li > div > p{
+    background-color: #dafdff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 1.25em;
+}
 ul.menu{
     background-color: #fff;
 }
@@ -71,5 +87,5 @@ footer {
     text-align: center;
 }
 footer p{
-    padding: 15px;
+    padding: 15px 15px 0 15px;
 }
